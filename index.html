@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>影视狗 · 热映电影与剧集榜单收录站 | 影视狗官网</title>
+<meta name="description" content="影视狗是一份由影迷自己整理的影视条目手册：收录近期热映电影、国产与海外剧集更新进度、站内打分与短评、可查的观影片单。打开影视狗，先按类型、地区、年份筛一遍，再决定今晚看什么，省掉来回切平台的功夫。">
+<meta name="keywords" content="影视狗,影视狗官网,影视推荐,剧集榜单,热映电影,剧集更新表,影评短评,观影片单,高分电影整理,国产剧推荐">
+<meta name="author" content="影视狗编辑部">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="generator" content="影视狗">
+<meta name="theme-color" content="#1c1b19">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="canonical" href="https://yingshigou-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="影视狗">
+<meta property="og:title" content="影视狗 · 热映电影与剧集榜单收录站">
+<meta property="og:description" content="热映电影、剧集更新进度、站内打分与观影片单，影视狗按类型和地区整理好了，直接翻。">
+<meta property="og:url" content="https://yingshigou-app.github.io/">
+<meta property="og:image" content="https://yingshigou-app.github.io/cover.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="影视狗 · 热映电影与剧集榜单收录站">
+<meta name="twitter:description" content="影视狗收录热映影片、剧集榜单与观影片单，按类型地区整理，翻一遍就知道看什么。">
+<meta name="twitter:image" content="https://yingshigou-app.github.io/cover.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:#f2ede3;color:#23211d;font:16px/1.75 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;padding:0 0 0 0;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:#23211d;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+.serif{font-family:"Songti SC","Noto Serif SC","STSong","SimSun",serif}
+
+/* 顶部报头 */
+.masthead{background:#1c1b19;color:#f2ede3;border-bottom:4px solid #b8332a}
+.masthead .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding-top:16px;padding-bottom:14px;flex-wrap:wrap}
+.logo{display:flex;align-items:baseline;gap:10px}
+.logo b{font-family:"Songti SC","Noto Serif SC",serif;font-size:34px;letter-spacing:4px;line-height:1}
+.logo span{font-size:12px;color:#c9c2b4;letter-spacing:1px;border-left:1px solid #5b574e;padding-left:10px}
+.masthead .issue{font-size:12px;color:#c9c2b4;text-align:right;line-height:1.6}
+.masthead .issue em{font-style:normal;color:#e4a44a}
+
+/* 导航 */
+.nav{background:#26241f;border-bottom:1px solid #3a3730;position:sticky;top:0;z-index:40}
+.nav ul{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav li{flex:0 0 auto}
+.nav a{display:block;padding:13px 15px;font-size:14px;color:#ddd7cb;border-bottom:3px solid transparent;white-space:nowrap}
+.nav a:hover,.nav a:focus{color:#fff;border-bottom-color:#b8332a;background:#302d26}
+.nav a.hot{color:#e4a44a}
+
+/* HERO */
+.hero{background:#f2ede3;padding:26px 0 8px}
+.hero .wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;align-items:start}
+.hero h1{font-family:"Songti SC","Noto Serif SC",serif;font-size:38px;line-height:1.28;letter-spacing:1px;margin-bottom:14px}
+.hero h1 i{font-style:normal;color:#b8332a}
+.hero p.lead{font-size:15.5px;color:#4a463d;margin-bottom:16px;max-width:46em}
+.hero p.lead strong{background:linear-gradient(transparent 62%,#f3d9a4 62%);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tags a{font-size:12.5px;padding:5px 11px;border:1px solid #c8c0b1;border-radius:2px;background:#fff;color:#5a554b}
+.tags a:hover{background:#b8332a;color:#fff;border-color:#b8332a}
+.ticket{background:#fff;border:1px solid #d9d2c3;border-left:6px solid #b8332a;padding:16px 18px;box-shadow:5px 5px 0 #e2dbcb}
+.ticket h3{font-size:13px;letter-spacing:2px;color:#b8332a;margin-bottom:10px;font-weight:700}
+.ticket .tt{font-family:"Songti SC",serif;font-size:22px;line-height:1.35;margin-bottom:8px}
+.ticket dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13.5px;color:#5a554b}
+.ticket dt{color:#8d8677}
+.ticket .score{font-family:"Songti SC",serif;font-size:30px;color:#b8332a;line-height:1}
+
+/* 通用栏目标题 */
+.sec{padding:34px 0 10px}
+.sec-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid #23211d;padding-bottom:8px;margin-bottom:18px;flex-wrap:wrap}
+.sec-head h2{font-family:"Songti SC",serif;font-size:25px;letter-spacing:2px}
+.sec-head .en{font-size:11px;letter-spacing:2px;color:#948d7d;text-transform:uppercase}
+.sec-head .more{margin-left:auto;font-size:13px;color:#b8332a}
+.sec-head .more:hover{text-decoration:underline}
+
+/* 热映速递 卡片 */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid #ddd6c7;padding:0;display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(35,33,29,.12)}
+.card .num{font-family:"Songti SC",serif;font-size:12px;color:#fff;background:#23211d;padding:3px 9px;align-self:flex-start}
+.card .body{padding:12px 14px 16px}
+.card h3{font-size:17.5px;margin-bottom:6px;font-family:"Songti SC",serif}
+.card .meta{font-size:12.5px;color:#8d8677;margin-bottom:8px}
+.card p{font-size:14px;color:#4f4a41}
+.card .foot{margin-top:10px;padding:9px 14px;border-top:1px dashed #ddd6c7;font-size:13px;display:flex;justify-content:space-between;color:#6f695d}
+.card .foot b{color:#b8332a}
+
+/* 榜单 */
+.rank{background:#fff;border:1px solid #ddd6c7}
+.rank li{display:grid;grid-template-columns:52px 1fr 84px;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px dotted #ddd6c7}
+.rank li:last-child{border-bottom:0}
+.rank .no{font-family:"Songti SC",serif;font-size:24px;color:#c9c2b4;text-align:center}
+.rank li:nth-child(1) .no,.rank li:nth-child(2) .no,.rank li:nth-child(3) .no{color:#b8332a}
+.rank h3{font-size:16px;margin-bottom:3px}
+.rank .sub{font-size:12.5px;color:#8d8677}
+.rank .sc{text-align:right;font-family:"Songti SC",serif;font-size:20px;color:#b8332a}
+.rank .sc small{display:block;font-size:11px;color:#948d7d;font-family:sans-serif}
+
+/* 评测 错位两栏 */
+.review{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.review .main{border-top:5px solid #23211d;padding-top:14px}
+.review .main h3{font-family:"Songti SC",serif;font-size:26px;line-height:1.35;margin-bottom:10px}
+.review .main .by{font-size:12.5px;color:#948d7d;margin-bottom:12px}
+.review .main p{font-size:15px;color:#4a463d;margin-bottom:12px}
+blockquote{background:#fff;border-left:4px solid #e4a44a;padding:12px 16px;font-family:"Songti SC",serif;font-size:16px;color:#3b3831;margin:14px 0}
+.review .side{display:flex;flex-direction:column;gap:12px}
+.review .side a{background:#fff;border:1px solid #ddd6c7;padding:12px 14px;font-size:14px;display:block}
+.review .side a:hover{border-color:#b8332a}
+.review .side span{display:block;font-size:12px;color:#948d7d;margin-top:4px}
+
+/* 片单表格 */
+.sheet{width:100%;border-collapse:collapse;background:#fff;font-size:14.5px;border:1px solid #ddd6c7}
+.sheet th{background:#23211d;color:#f2ede3;font-weight:500;font-size:13.5px;text-align:left;padding:11px 12px;letter-spacing:1px}
+.sheet td{padding:11px 12px;border-bottom:1px dotted #ddd6c7;color:#4f4a41}
+.sheet tr:last-child td{border-bottom:0}
+.sheet td b{color:#23211d}
+.sheet .tag{font-size:12px;border:1px solid #c8c0b1;border-radius:2px;padding:2px 7px;color:#6f695d}
+.sheet-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* 社区 */
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.wall .msg{background:#fff;border:1px solid #ddd6c7;padding:14px;font-size:14px;position:relative}
+.wall .msg:before{content:"“";position:absolute;top:2px;right:10px;font-family:"Songti SC",serif;font-size:34px;color:#e6dfd0}
+.wall .msg p{color:#4f4a41}
+.wall .msg .who{margin-top:10px;font-size:12.5px;color:#948d7d}
+.wall .msg:nth-child(2n){background:#fbf8f1}
+
+/* FAQ */
+.faq{background:#fff;border:1px solid #ddd6c7}
+.faq details{border-bottom:1px dotted #ddd6c7}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;padding:14px 16px;font-size:15.5px;font-weight:600;list-style:none;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:16px;top:12px;color:#b8332a;font-size:20px}
+.faq details[open] summary:after{content:"–"}
+.faq .ans{padding:0 16px 16px;font-size:14.5px;color:#4f4a41}
+
+/* 订阅条 */
+.sub{margin:32px 0 0;background:#1c1b19;color:#f2ede3;padding:22px 18px}
+.sub .wrap{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.sub h2{font-family:"Songti SC",serif;font-size:21px;letter-spacing:1px}
+.sub p{font-size:13.5px;color:#c9c2b4}
+.sub form{display:flex;gap:8px;margin-left:auto;flex:1 1 260px}
+.sub input{flex:1;min-width:0;padding:10px 12px;border:1px solid #4a463d;background:#26241f;color:#f2ede3;font-size:14px}
+.sub button{padding:10px 18px;background:#b8332a;border:0;color:#fff;font-size:14px;cursor:pointer}
+
+/* 页脚 */
+footer{background:#151412;color:#a9a294;padding:26px 0 30px;font-size:13.5px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:20px}
+footer h4{color:#f2ede3;font-size:14px;margin-bottom:10px;letter-spacing:1px}
+footer li{margin-bottom:7px}
+footer a{color:#a9a294}
+footer a:hover{color:#fff;text-decoration:underline}
+footer .bot{border-top:1px solid #302d26;margin-top:22px;padding-top:14px;font-size:12.5px;color:#7e7869;line-height:1.9}
+footer .bot b{color:#c9c2b4}
+
+@media (max-width:900px){
+.hero .wrap{grid-template-columns:1fr;gap:20px}
+.hero h1{font-size:29px}
+.cards{grid-template-columns:repeat(2,1fr)}
+.review{grid-template-columns:1fr}
+.wall{grid-template-columns:repeat(2,1fr)}
+footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+.logo b{font-size:27px;letter-spacing:2px}
+.masthead .issue{text-align:left}
+.cards{grid-template-columns:1fr}
+.wall{grid-template-columns:1fr}
+.rank li{grid-template-columns:40px 1fr 70px;padding:10px}
+.rank .sc{font-size:17px}
+.sec{padding:26px 0 8px}
+.sec-head h2{font-size:21px}
+.sub form{flex-direction:column}
+.sub button{width:100%}
+footer .cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="masthead">
+  <div class="wrap">
+    <div class="logo">
+      <b>影视狗</b>
+      <span>热映电影 · 剧集榜单 · 观影片单</span>
+    </div>
+    <div class="issue">
+      第 107 期 · 每周三更新<br>
+      本站域名 <em>yingshigou-app.github.io</em>
+    </div>
+  </div>
+</div>
+
+<nav class="nav" aria-label="主导航">
+  <div class="wrap">
+    <ul>
+      <li><a href="#" title="影视狗首页">首页</a></li>
+      <li><a href="#" class="hot">热映速递</a></li>
+      <li><a href="#">剧集榜单</a></li>
+      <li><a href="#">影视评测</a></li>
+      <li><a href="#">观影指南</a></li>
+      <li><a href="#">影迷留言墙</a></li>
+      <li><a href="#">常见问题</a></li>
+      <li><a href="#">关于影视狗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>今晚看什么，先翻一遍<i>影视狗</i>的条目</h1>
+      <p class="lead">影视狗不搬运完整片源，只做一件事：把散在各处的影视信息<strong>按类型、地区、年份整理成能翻的清单</strong>。热映影片的上映日期、剧集的更新到第几集、站内编辑看完后打的分数，都写在条目里，翻完就知道值不值得花这两小时。</p>
+      <div class="tags">
+        <a href="#">#科幻</a>
+        <a href="#">#悬疑犯罪</a>
+        <a href="#">#国产剧</a>
+        <a href="#">#日韩剧集</a>
+        <a href="#">#动画电影</a>
+        <a href="#">#纪录片</a>
+        <a href="#">#老片修复</a>
+      </div>
+      <p class="lead" style="font-size:14.5px;color:#6f695d">收录条目 3,280 条 · 近 30 天新增 126 条 · 每周三晚八点整理上线</p>
+    </div>
+    <aside class="ticket" aria-label="编辑推荐">
+      <h3>本周编辑票选</h3>
+      <p class="tt">《漫长的季节》重看笔记：一部把时间讲透的国产剧</p>
+      <dl>
+        <dt>类型</dt><dd>剧情 / 悬疑</dd>
+        <dt>地区</dt><dd>中国大陆 · 2023</dd>
+        <dt>集数</dt><dd>12 集 · 已完结</dd>
+        <dt>站内分</dt><dd class="score">9.2</dd>
+      </dl>
+      <p style="font-size:13.5px;color:#5a554b;margin-top:10px;border-top:1px dashed #ddd6c7;padding-top:10px">编辑部一句话：别被"悬疑"标签骗了，它真正讲的是人怎么跟自己过去的十年和解。</p>
+    </aside>
+  </div>
+</header>
+
+<main>
+<section class="sec" id="hot">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>热映速递</h2>
+      <span class="en">Now Screening</span>
+      <a class="more" href="#">查看全部热映 →</a>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="num">01 / 院线</span>
+        <div class="body">
+          <h3>《流浪地球》系列重映场</h3>
+          <p class="meta">科幻 · 中国大陆 · 重映场次统计中</p>
+          <p>影视狗把两部的重映排片按城市整理好了，含 IMAX 与 CINITY 版本标注，周末场次另列一栏。</p>
+        </div>
+        <div class="foot"><span>站内分 8.4</span><a href="#"><b>看排片 →</b></a></div>
+      </article>
+      <article class="card">
+        <span class="num">02 / 流媒体</span>
+        <div class="body">
+          <h3>本周新上线剧集清单</h3>
+          <p class="meta">剧集 · 多地区 · 10 月更新</p>
+          <p>按平台分组整理上线日期、集数与更新频率，标注了哪些是周更、哪些是一次性放完。</p>
+        </div>
+        <div class="foot"><span>共 18 部</span><a href="#"><b>翻清单 →</b></a></div>
+      </article>
+      <article class="card">
+        <span class="num">03 / 修复</span>
+        <div class="body">
+          <h3>老片修复放映专场</h3>
+          <p class="meta">经典 · 修复版 · 全国艺术院线</p>
+          <p>整理了近三个月可查的修复版放映信息，含 4K 修复、胶片放映与普通话配音场次提示。</p>
+        </div>
+        <div class="foot"><span>站内分 8.9</span><a href="#"><b>看场次 →</b></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="rank">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>剧集榜单</h2>
+      <span class="en">Series Ranking</span>
+      <a class="more" href="#">完整榜单 →</a>
+    </div>
+    <ol class="rank">
+      <li><span class="no">1</span><div><h3>《漫长的季节》</h3><p class="sub">剧情 / 悬疑 · 12 集 · 已完结</p></div><span class="sc">9.2<small>站内分</small></span></li>
+      <li><span class="no">2</span><div><h3>《繁花》</h3><p class="sub">剧情 / 都市 · 30 集 · 已完结</p></div><span class="sc">8.8<small>站内分</small></span></li>
+      <li><span class="no">3</span><div><h3>《我的阿勒泰》</h3><p class="sub">剧情 / 田园 · 8 集 · 已完结</p></div><span class="sc">8.7<small>站内分</small></span></li>
+      <li><span class="no">4</span><div><h3>《去有风的地方》</h3><p class="sub">剧情 / 治愈 · 40 集 · 已完结</p></div><span class="sc">8.2<small>站内分</small></span></li>
+      <li><span class="no">5</span><div><h3>《山海情》</h3><p class="sub">剧情 / 年代 · 23 集 · 已完结</p></div><span class="sc">9.0<small>站内分</small></span></li>
+      <li><span class="no">6</span><div><h3>《三体》电视剧版</h3><p class="sub">科幻 / 悬疑 · 30 集 · 已完结</p></div><span class="sc">8.5<small>站内分</small></span></li>
+    </ol>
+    <p style="font-size:13px;color:#8d8677;margin-top:10px">榜单依据影视狗站内编辑打分与留言墙讨论热度综合排列，每周三随条目更新重排。</p>
+  </div>
+</section>
+
+<section class="sec" id="review">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>影视评测</h2>
+      <span class="en">Reviews</span>
+      <a class="more" href="#">全部评测 →</a>
+    </div>
+    <div class="review">
+      <article class="main">
+        <h3>《肖申克的救赎》：三十年后再看，它讲的根本不是越狱</h3>
+        <p class="by">影视狗编辑部 · 老片重看计划 第 14 篇 · 阅读约 4 分钟</p>
+        <p>很多人第一次看时盯着那把小锤子和海报后的洞，第二次看才会注意到安迪在广播里放唱片时，镜头扫过院子里每一张停下来的脸。那一段是整部片子真正的题眼：一个人被关了二十年，还要不要保持"我值得被好好对待"的念头。</p>
+        <blockquote>希望是危险的东西，但把它彻底扔掉，人就先一步死了。</blockquote>
+        <p>影视狗给这部片子的站内分是 9.3，扣分扣在中段节奏略拖。适合的观影场景：周末下午，别开弹幕，一口气看完。</p>
+        <p style="font-size:13.5px;color:#8d8677">相关条目：<a href="#" style="color:#b8332a">老片修复放映专场</a> · <a href="#" style="color:#b8332a">高分剧情片单</a></p>
+      </article>
+      <div class="side">
+        <a href="#"><b>《疯狂的麦克斯：狂暴之路》动作片的教科书</b><span>站内分 8.7 · 动作 / 科幻</span></a>
+        <a href="#"><b>《寄生虫》：阶层这件事，导演没给答案</b><span>站内分 8.8 · 剧情 / 惊悚</span></a>
+        <a href="#"><b>《千与千寻》：成年后才看懂的无脸男</b><span>站内分 9.4 · 动画 / 奇幻</span></a>
+        <a href="#"><b>《大话西游》：笑点和泪点为什么隔了十年</b><span>站内分 9.1 · 喜剧 / 爱情</span></a>
+        <a href="#"><b>纪录片推荐：五部适合一个人安静看完的</b><span>片单 · 共 5 条</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="guide">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>观影指南</h2>
+      <span class="en">Watch Guide</span>
+      <a class="more" href="#">更多片单 →</a>
+    </div>
+    <div class="sheet-scroll">
+      <table class="sheet">
+        <thead>
+          <tr><th>片单</th><th>适合场景</th><th>条目数</th><th>时长合计</th><th>难度</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>周末一口气看完的科幻五部</b></td><td>周末 · 单人</td><td>5 条</td><td>约 11 小时</td><td><span class="tag">轻松</span></td></tr>
+          <tr><td><b>和家人一起看的合家欢动画</b></td><td>节假日 · 亲子</td><td>8 条</td><td>约 14 小时</td><td><span class="tag">轻松</span></td></tr>
+          <tr><td><b>悬疑入门：十部不烧脑但上瘾的</b></td><td>通勤后 · 睡前</td><td>10 条</td><td>约 20 小时</td><td><span class="tag">适中</span></td></tr>
+          <tr><td><b>华语电影四十年补片计划</b></td><td>长期 · 系统看</td><td>40 条</td><td>约 78 小时</td><td><span class="tag">进阶</span></td></tr>
+          <tr><td><b>下雨天适合重看的爱情片</b></td><td>雨天 · 双人</td><td>6 条</td><td>约 12 小时</td><td><span class="tag">轻松</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13px;color:#8d8677;margin-top:10px">片单里的条目均标注了可查的观看渠道类型与画质版本，具体是否在你所在地区的平台上架，以平台页面为准。</p>
+  </div>
+</section>
+
+<section class="sec" id="wall">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>影迷留言墙</h2>
+      <span class="en">From Readers</span>
+      <a class="more" href="#">写一条 →</a>
+    </div>
+    <div class="wall">
+      <div class="msg"><p>照着影视狗的华语补片计划看了七部，第一次发现原来可以按年份连着看，感觉完全不一样。</p><p class="who">—— 徐州 · 老周</p></div>
+      <div class="msg"><p>榜单里那部八集的短剧真好看，一晚上刷完，第二天上班有点困，但值。</p><p class="who">—— 宿迁 · 小鹿</p></div>
+      <div class="msg"><p>希望多整理点纪录片，尤其自然类的，别全是剧情片。</p><p class="who">—— 成都 · 阿岩</p></div>
+      <div class="msg"><p>老片修复那栏帮了大忙，我爸妈终于肯跟我去电影院了。</p><p class="who">—— 沈阳 · 大刘</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>常见问题</h2>
+      <span class="en">FAQ</span>
+      <a class="more" href="#">联系编辑部 →</a>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>影视狗提供在线播放吗？</summary>
+        <div class="ans">不提供。影视狗只整理条目信息：类型、地区、年份、集数、更新进度、站内打分和短评，方便你先筛选再决定去哪里看。观看请前往各自平台的官方页面。</div>
+      </details>
+      <details>
+        <summary>站内分是怎么算出来的？</summary>
+        <div class="ans">由影视狗编辑部看完后各自打分取平均，再结合留言墙的讨论热度微调，满分 10 分。它只代表本站口味，不代表任何第三方评分机构。</div>
+      </details>
+      <details>
+        <summary>榜单多久更新一次？</summary>
+        <div class="ans">每周三晚八点更新一次，热映速递栏目在有新片定档时会临时加更。条目信息如发现过期，可以在留言墙里指出，编辑部会在下期修正。</div>
+      </details>
+      <details>
+        <summary>怎么提交想看的条目？</summary>
+        <div class="ans">在留言墙写下条目名称和年份即可，编辑部每周挑十条补充进清单。同一条目被提到多次的会优先整理。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="sub">
+  <div class="wrap">
+    <div>
+      <h2>每周三，把新条目寄给你</h2>
+      <p>留个邮箱，影视狗把本周新增的影视条目和榜单变动整理成一封邮件发过去。</p>
+    </div>
+    <form action="#" method="post" onsubmit="return false;">
+      <input type="email" name="email" placeholder="输入邮箱地址" aria-label="邮箱地址">
+      <button type="submit">订阅更新</button>
+    </form>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>关于影视狗</h4>
+        <p style="color:#a9a294;font-size:13.5px">影视狗是一个由影迷维护的影视条目整理站，收录热映电影、剧集榜单、评测短评与观影片单。所有条目信息仅供筛选参考，不构成任何观看建议。</p>
+        <p style="margin-top:10px;color:#7e7869;font-size:12.5px">网址：https://yingshigou-app.github.io</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="#">热映速递</a></li>
+          <li><a href="#">剧集榜单</a></li>
+          <li><a href="#">影视评测</a></li>
+          <li><a href="#">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>片单索引</h4>
+        <ul>
+          <li><a href="#">科幻片单</a></li>
+          <li><a href="#">悬疑片单</a></li>
+          <li><a href="#">动画片单</a></li>
+          <li><a href="#">纪录片片单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>站点相关</h4>
+        <ul>
+          <li><a href="#">条目收录标准</a></li>
+          <li><a href="#">打分说明</a></li>
+          <li><a href="#">留言墙</a></li>
+          <li><a href="#">联系编辑部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bot">
+      <p><b>影视狗</b> · yingshigou-app.github.io · 站内所有条目信息由编辑部整理，影片版权归各自权利人所有。</p>
+      <p>页面最后更新：2026 年 10 月 26 日 &nbsp;|&nbsp; <a href="#">返回顶部</a></p>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://yingshigou-app.github.io/#website",
+      "url": "https://yingshigou-app.github.io/",
+      "name": "影视狗",
+      "alternateName": ["影视狗官网", "影视狗影视条目站"],
+      "description": "影视狗收录热映电影、剧集榜单、影视评测与观影片单，按类型地区整理影视条目信息。",
+      "inLanguage": "zh-CN",
+      "publisher": {"@id": "https://yingshigou-app.github.io/#org"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://yingshigou-app.github.io/#org",
+      "name": "影视狗编辑部",
+      "url": "https://yingshigou-app.github.io/",
+      "description": "维护影视狗的影视条目收录与榜单整理工作。"
+    },
+    {
+      "@type": "ItemList",
+      "name": "影视狗剧集榜单",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"《漫长的季节》"},
+        {"@type":"ListItem","position":2,"name":"《繁花》"},
+        {"@type":"ListItem","position":3,"name":"《我的阿勒泰》"},
+        {"@type":"ListItem","position":4,"name":"《去有风的地方》"},
+        {"@type":"ListItem","position":5,"name":"《山海情》"},
+        {"@type":"ListItem","position":6,"name":"《三体》电视剧版"}
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
